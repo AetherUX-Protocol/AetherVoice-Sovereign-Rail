@@ -4,12 +4,15 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-# Tether's QVAC SDK for on-device inference
-qvac-sdk = "0.1.0" 
+# Tether's QVAC SDK (Using git for specialized hackathon access)
+qvac-sdk = { git = "https://github.com/tetherto/qvac-rust-sdk", branch = "main" }
+
 # Image processing for local OCR
 image = "0.25"
-# Fast local LLM execution via ONNX
-ort = "2.0" 
+
+# Fast local LLM execution via ONNX (Explicitly using the RC version)
+ort = "=2.0.0-rc.12"
+
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 tokio = { version = "1", features = ["full"] }
