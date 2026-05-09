@@ -1,0 +1,14 @@
+{
+  "name": "palmusd-bridge",
+  "version": "1.0.0",
+  "description": "Confidential settlement rail for Palm USD using Umbra SDK",
+  "main": "settle.js",
+  "dependencies": {
+    "@solana/web3.js": "^1.90.0",
+    "@umbra-privacy/sdk": "^0.1.5",
+    "@solana/spl-token": "^0.4.0"
+  },
+  "scripts": {
+    "start": "node settle.js"
+  }
+}
