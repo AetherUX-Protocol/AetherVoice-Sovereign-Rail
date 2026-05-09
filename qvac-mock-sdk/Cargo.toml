@@ -1,10 +1,7 @@
-[dependencies]
-# Use the local path to the folder you just created
-qvac-sdk = { path = "../qvac-mock-sdk" }
+[package]
+name = "qvac-sdk"
+version = "0.1.0"
+edition = "2021"
 
-# Ensure other dependencies are correct
-ort = "=2.0.0-rc.12"
-image = "0.25"
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-tokio = { version = "1", features = ["full"] }
+[dependencies]
+# No dependencies needed for the mock version
